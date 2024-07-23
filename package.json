@@ -1,0 +1,26 @@
+{
+  "name": "contact-manager",
+  "version": "1.0.0",
+  "description": "Contact manager web based for GTA",
+  "main": "./src/main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/main.js",
+    "dev": "nodemon ./src/main.js"
+  },
+  "author": "Muhammad Adib Prasetiya Aji",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.17.0",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-ejs-layouts": "^2.5.1",
+    "joi": "^17.13.3",
+    "nodemon": "^3.1.4"
+  },
+  "devDependencies": {
+    "prisma": "^5.17.0"
+  }
+}
