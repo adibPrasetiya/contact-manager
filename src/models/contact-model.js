@@ -33,7 +33,9 @@ const get = async () => {
   return contacts;
 };
 
-const update = async (reqBody) => {
+const update = async (contactId, reqBody) => {
+  reqBody.contact_id = contactId;
+  console.log(reqBody);
   reqBody = validate(updateContactValidator, reqBody);
 
   const countContact = await prismaClient.contacts.count({

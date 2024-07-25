@@ -5,4 +5,5 @@ export const publicRouter = Router();
 
 publicRouter.get("/", contactController.get);
 publicRouter.post("/contacts", contactController.post);
-publicRouter.delete("/contacts/:contactId", contactController.remove);
+publicRouter.post("/contacts/:contactId/edit", contactController.update);
+publicRouter.post("/contacts/:contactId/delete", contactController.remove);
